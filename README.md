@@ -15,3 +15,6 @@ Features a quick "Copy" button to grab your hours instantly, and a "Clean UI" bu
 **Tech Stack**
 HTML5 (Mostly AI) with a few small tweaks from me
 Modern JavaScript (ES6) written 100% by me as part of my project-based JavaScript learning. 
+
+Here is an online working version: 
+voluble-fenglisu-8445db.netlify.app
