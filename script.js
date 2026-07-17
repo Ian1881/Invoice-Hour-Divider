@@ -37,7 +37,7 @@ const copyToClipboard = function () {
   navigator.clipboard.writeText(resultArea.value);
   copyBtn.textContent = 'Copied!';
   setTimeout(() => {
-    copyBtn.textContent = 'Copy Reviews';
+    copyBtn.textContent = 'Copy to Clipboard';
   }, 4000);
 
   moneyInput.value = '';
