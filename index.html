@@ -1,32 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hour Splitter for Invoice</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>Hour Splitter</h1>
-        <div>
-            <input type="number" id="money" placeholder="Enter Salary">
-        </div>
-        <div>
-            <input type="number" id="hourlyRate" placeholder="Enter Hourly Rate">
-        </div>
-        <button id="calculate">Calculate</button>
-        <div>
-            <p class="resultHours"></p>
-        </div>
-        <div id="results">
-            <p class="results">Your Results</p>
-        </div>
+      <button class="clean-btn">Clean</button>
+      <h1>Hour Splitter</h1>
+      <div>
+        <input type="number" id="money" placeholder="Enter Salary" />
+      </div>
+      <div>
+        <input type="number" id="hourlyRate" placeholder="Enter Hourly Rate" />
+      </div>
+      <div>
+        <input
+          type="number"
+          id="time-slots"
+          placeholder="# of Slots You Need"
+        />
+      </div>
+      <button id="calculate">Calculate</button>
+      <div>
+        <p class="resultHours"></p>
+      </div>
+      <div id="results">
+        <p class="results">Your Results</p>
+        <textarea
+          id="divided-hours"
+          readonly
+          placeholder="Divided Hours"
+          spellcheck="false"
+        ></textarea>
+        <button class="copy-btn">Copy to Clipboard</button>
+      </div>
     </div>
-
-    <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
