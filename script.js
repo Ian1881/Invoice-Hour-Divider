@@ -8,9 +8,9 @@ const copyBtn = document.querySelector('.copy-btn');
 const cleanBtn = document.querySelector('.clean-btn');
 
 const HourSplitter = function () {
-    const money = moneyInput.value; 
-    const rate = hourlyRate.value; 
-    const slots = slotNum.value;
+  const money = moneyInput.value;
+  const rate = hourlyRate.value;
+  const slots = slotNum.value;
 
   if (!money || !rate || !slots || rate <= 0 || slots <= 0) {
     alert('Please enter valid information');
@@ -18,7 +18,7 @@ const HourSplitter = function () {
   }
   const hourArr = [];
   let workedHours = +moneyInput.value / +hourlyRate.value;
-  resultHours.textContent = `You Worked: ${workedHours} h`;
+  resultHours.textContent = `You Worked: ${workedHours.toFixed(2)} h`;
   let remaining = workedHours;
   let divider = +slotNum.value;
   while (hourArr.length < +slotNum.value - 1) {
@@ -50,6 +50,7 @@ const cleanUI = function () {
   moneyInput.value = '';
   hourlyRate.value = '';
   slotNum.value = '';
+  resultHours.textContent = '';
 };
 
 calculateButton.addEventListener('click', HourSplitter);
